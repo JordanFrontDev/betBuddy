@@ -1,14 +1,27 @@
 import { Link } from "react-router-dom";
+import NavBar from "../components/Navbar";
+import { useEffect } from "react";
+
+import styles from "./AgeRestrictionPage.module.css";
 
 function AgeRestrictionPage() {
+  useEffect(() => {
+    console.log("age hi");
+  }, []);
   return (
-    <div>
-      <h1>Are you over 18?</h1>
-      <div>
-        <Link to="/app">Yes</Link>
-        <Link to="/">No</Link>
-      </div>
-    </div>
+    <main>
+      <NavBar />
+
+      <section className={styles.restriction}>
+        <div>
+          <h1 className={styles.text}>Você tem mais de 18 anos?</h1>
+          <ul className={styles.linkBox}>
+            <Link to="/bet">Sim</Link>
+            <Link to="/">Não</Link>
+          </ul>
+        </div>
+      </section>
+    </main>
   );
 }
 

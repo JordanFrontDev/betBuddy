@@ -1,8 +1,8 @@
 :root {
-  --color-brand--1: #ffb545;
+  --color-brand--1: #fc6a03;
   --color-brand--2: #00c46a;
 
-  --color-dark--0: #242a2e;
+  --color-dark--0: #303c42;
   --color-dark--1: #2d3439;
   --color-dark--2: #42484d;
   --color-light--1: #aaa;
@@ -23,7 +23,7 @@ html {
 
 body {
   font-family: "Manrope", sans-serif;
-  color: var(--color-light--2);
+  color: var(--color-dark--0);
   font-weight: 400;
   line-height: 1.6;
 }

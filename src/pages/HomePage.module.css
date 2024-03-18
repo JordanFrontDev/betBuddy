@@ -1,0 +1,47 @@
+.homepage section {
+  height: 90vh;
+  background-image: url("/hero-image.png");
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+
+.homepage div {
+  width: 50%;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 1fr 5rem 4rem;
+}
+
+.homepage h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.homepage p {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.cta:link,
+.cta:visited {
+  display: inline-block;
+  background-color: #fc6a03;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  align-self: start;
+  justify-self: start;
+  transition: all 0.2s linear 0s;
+}
+
+.cta:hover {
+  background-color: #fd9d58;
+}
