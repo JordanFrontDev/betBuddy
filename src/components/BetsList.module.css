@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 5rem));
   grid-gap: 5rem;
+  margin-bottom: 2rem;
 }
 
 .title {
