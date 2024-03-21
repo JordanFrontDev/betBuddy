@@ -1,11 +1,12 @@
 :root {
   --color-brand--1: #fc6a03;
-  --color-brand--2: #00c46a;
+  --color-brand--2: #1dad78;
+  --color-brand--3: #0066b3;
 
   --color-dark--0: #303c42;
   --color-dark--1: #2d3439;
   --color-dark--2: #42484d;
-  --color-light--1: #aaa;
+  --color-light--1: #8597a3;
   --color-light--2: #ececec;
   --color-light--3: #d6dee0;
 }
@@ -22,8 +23,8 @@ html {
 }
 
 body {
-  font-family: "Manrope", sans-serif;
-  color: var(--color-dark--0);
+  font-family: "roboto", sans-serif;
+  color: var(--color-dark--2);
   font-weight: 400;
   line-height: 1.6;
 }

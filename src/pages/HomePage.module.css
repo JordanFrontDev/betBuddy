@@ -15,16 +15,21 @@
   align-items: center;
   justify-content: center;
   grid-template-rows: 1fr 5rem 4rem;
+  margin-left: 7rem;
 }
 
 .homepage h1 {
-  font-size: 5rem;
+  font-size: 7rem;
+  font-weight: 700;
   color: #fff;
+  font-weight: 800;
+  align-self: end;
 }
 
 .homepage p {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
+  align-self: start;
 }
 
 .cta:link,
@@ -40,6 +45,7 @@
   align-self: start;
   justify-self: start;
   transition: all 0.2s linear 0s;
+  font-weight: 700;
 }
 
 .cta:hover {

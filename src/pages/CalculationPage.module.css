@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container div {
+}
+
+.titlesList {
+  display: flex;
+  justify-content: center;
+}
+
+.container h1 {
+  font-size: 4rem;
+  color: var(--color-brand--2);
+  margin-top: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: 700;
+}
+
+.number {
+  background-color: var(--color-brand--2);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.8rem;
+  margin: 0 0.3rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.numbersList {
+  display: grid;
+  text-decoration: none;
+  list-style: none;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.box {
+  list-style: none;
+  margin-bottom: 4rem;
+}
+
+.listItem {
+  display: flex;
+  justify-content: center;
+}
+
+.listItem span {
+  margin: 0 18rem;
+  font-size: 4rem;
+}
+
+.title {
+  font-size: 5rem;
+  margin-top: 4rem;
+  color: var(--color-light--1);
+}
+
+.numbersList li {
+  margin: 1rem 1rem;
+}
+
+.item {
+  font-size: 7rem;
+  font-weight: 700;
+  color: var(--color-brand--2);
+}
+
+.titleBet {
+  font-size: 3rem;
+  margin-right: 5rem;
+  margin-left: 9rem;
+}
+
+.rewardContainer {
+  height: 40vh;
+  background-color: var(--color-brand--2);
+  width: 90vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rewardBtn {
+  text-decoration: none;
+  font-size: 7rem;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 11px;
+  background-color: var(--color-brand--1);
+
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

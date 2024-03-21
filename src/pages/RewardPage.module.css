@@ -1,0 +1,35 @@
+.container {
+  background-image: url("/winner.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox h1 {
+  font-size: 7rem;
+}
+
+.contentBox span {
+  font-size: 3rem;
+  margin: 0 2rem;
+}
+
+.contentBox p {
+  text-align: center;
+  width: 80%;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+}

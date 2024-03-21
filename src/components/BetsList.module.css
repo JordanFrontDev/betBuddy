@@ -1,0 +1,21 @@
+.list {
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 5rem));
+  grid-gap: 5rem;
+}
+
+.title {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 10rem;
+  font-size: 4rem;
+}
+
+.noBet {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 4rem 0;
+  font-size: 2rem;
+}
