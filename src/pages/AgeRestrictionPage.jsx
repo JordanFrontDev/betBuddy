@@ -1,13 +1,9 @@
 import { Link } from "react-router-dom";
 import NavBar from "../components/Navbar";
-import { useEffect } from "react";
 
 import styles from "./AgeRestrictionPage.module.css";
 
 function AgeRestrictionPage() {
-  useEffect(() => {
-    console.log("age hi");
-  }, []);
   return (
     <main>
       <NavBar />

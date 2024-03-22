@@ -35,14 +35,18 @@ function BettingPhase({ bets, setBets }) {
     setNumbers([]);
     setIsSurprise((prevValue) => !prevValue);
 
-    const randomNumbers = new Set();
+    if (!isSurprise) {
+      const randomNumbers = new Set();
 
-    while (randomNumbers.size < 5) {
-      const randomNumber = Math.floor(Math.random() * 50) + 1;
-      randomNumbers.add(randomNumber);
+      while (randomNumbers.size < 5) {
+        const randomNumber = Math.floor(Math.random() * 50) + 1;
+        randomNumbers.add(randomNumber);
+      }
+
+      setSurpriseNumbers(Array.from(randomNumbers));
+    } else {
+      setSurpriseNumbers([]);
     }
-
-    setSurpriseNumbers(Array.from(randomNumbers));
   }
 
   function handleResetInputNumbers() {

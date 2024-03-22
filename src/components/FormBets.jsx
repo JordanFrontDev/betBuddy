@@ -43,7 +43,7 @@ function FormBets({
 
   function handleValidateCpf(e) {
     const value = e.target.value.trim();
-    if (Number(value) || value === "") {
+    if (Number(value) || value === "" || value == 0) {
       setCpf(value);
     }
   }
@@ -72,8 +72,8 @@ function FormBets({
 
       <div className={styles.input}>
         <input
-          maxLength="14"
-          minLength="14"
+          maxLength="11"
+          minLength="11"
           type="text"
           value={cpf}
           onChange={handleValidateCpf}

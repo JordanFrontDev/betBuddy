@@ -8,7 +8,7 @@ function DrawButton() {
       <h1>Como Jogar</h1>
       <p>
         Depois de ter registrado as suas apostas você pode entrar na fase de
-        sorteio clicando no botão abaixo. 5 números serão sortados, caso não
+        sorteio clicando no botão abaixo. 5 números serão sorteados, caso não
         haja um ganhador 5 números serão sorteados novamente até um maximo de 25
         vezes.
       </p>
