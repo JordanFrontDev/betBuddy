@@ -4,3 +4,11 @@
   display: grid;
   grid-template-columns: 55vw 1fr;
 }
+
+@media only screen and (max-width: 600px) {
+  .main {
+    margin: 0;
+    width: 100%;
+    padding: 0 2rem;
+  }
+}

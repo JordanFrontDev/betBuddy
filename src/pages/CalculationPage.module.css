@@ -4,9 +4,6 @@
   align-items: center;
 }
 
-.container div {
-}
-
 .titlesList {
   display: flex;
   justify-content: center;
@@ -19,24 +16,6 @@
   text-transform: uppercase;
   letter-spacing: 1rem;
   font-weight: 700;
-}
-
-.number {
-  background-color: var(--color-brand--2);
-  color: #fff;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  padding: 0.5rem 0.8rem;
-  margin: 0 0.3rem;
-  font-weight: 700;
-  margin-top: 1.5rem;
-}
-
-.numbersList {
-  display: grid;
-  text-decoration: none;
-  list-style: none;
-  grid-template-columns: repeat(5, 1fr);
 }
 
 .box {
@@ -55,13 +34,10 @@
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-top: 4rem;
+  text-align: center;
   color: var(--color-light--1);
-}
-
-.numbersList li {
-  margin: 1rem 1rem;
 }
 
 .item {
@@ -107,5 +83,41 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .listItem span {
+    margin: 0 12rem;
+  }
+
+  .titleBet {
+    margin-right: 1rem;
+    margin-left: 4rem;
+  }
+
+  .rewardContainer {
+    height: 30vh;
+  }
+
+  .rewardBtn {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .listItem span {
+    margin: 0 10rem;
+  }
+
+  .titleBet {
+    margin-left: 2.5rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+  .container h1 {
+    font-size: 3rem;
   }
 }

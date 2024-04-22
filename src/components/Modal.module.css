@@ -73,3 +73,9 @@
   background-color: var(--color-brand--2);
   color: #fff;
 }
+
+@media only screen and (max-width: 850px) {
+  .modal h1 {
+    font-size: 2.5rem;
+  }
+}

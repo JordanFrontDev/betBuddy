@@ -28,6 +28,7 @@ function App() {
     //clean up state in storage
     localStorage.clear();
     setDrawNumbersList([]);
+    setBets([]);
     setDraw([]);
     setTurns(0);
   }

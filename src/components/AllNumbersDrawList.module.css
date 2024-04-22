@@ -1,0 +1,39 @@
+.number {
+  background-color: var(--color-brand--2);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.8rem;
+  margin: 0 0.3rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.numbersList {
+  display: grid;
+  text-decoration: none;
+  list-style: none;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.numbersList li {
+  margin: 1rem 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .numbersList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .numbersList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .numbersList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

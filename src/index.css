@@ -9,6 +9,8 @@
   --color-light--1: #8597a3;
   --color-light--2: #ececec;
   --color-light--3: #d6dee0;
+
+  --bp-largest: 75em;
 }
 
 * {
@@ -20,6 +22,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -49,4 +52,10 @@ textarea {
 input:focus {
   outline: none;
   background-color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
 }

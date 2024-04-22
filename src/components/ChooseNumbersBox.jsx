@@ -22,7 +22,7 @@ function ChooseNumbersBox({
 
       <div className={styles.numbers}>
         {Array.from({ length: 50 }, (_, i) => (
-          <div
+          <a
             className={`${styles.number} ${
               numbers.includes(i + 1) ? styles.selected : ""
             } `}
@@ -30,7 +30,7 @@ function ChooseNumbersBox({
             onClick={() => handleAddNumbers(i + 1)}
           >
             {i < 9 ? "0" + (i + 1) : i + 1}
-          </div>
+          </a>
         ))}
       </div>
       <p className={styles.chosenNumbers}>{sortedNumbersString}</p>

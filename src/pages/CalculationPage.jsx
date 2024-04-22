@@ -3,6 +3,7 @@ import BackBtn from "../components/BackBtn";
 import BetsList from "../components/BetsList";
 import NavBar from "../components/Navbar";
 import styles from "./CalculationPage.module.css";
+import AllNumbersDrawList from "../components/AllNumbersDrawList";
 
 function CalculationPage({
   bets,
@@ -51,29 +52,9 @@ function CalculationPage({
       <main className={styles.container}>
         <h1>Apuração</h1>
         <h3 className={styles.title}>Lista de números sorteados</h3>
-        <ul className={styles.numbersList}>
-          {drawNumbersList.map((number) => {
-            return (
-              <li key={randomIDNumber()}>
-                <span className={styles.number}>
-                  {number[0] <= 9 ? "0" + number[0] : number[0]}
-                </span>
-                <span className={styles.number}>
-                  {number[1] <= 9 ? "0" + number[1] : number[1]}
-                </span>
-                <span className={styles.number}>
-                  {number[2] <= 9 ? "0" + number[2] : number[2]}
-                </span>
-                <span className={styles.number}>
-                  {number[3] <= 9 ? "0" + number[3] : number[3]}
-                </span>
-                <span className={styles.number}>
-                  {number[4] <= 9 ? "0" + number[4] : number[4]}
-                </span>
-              </li>
-            );
-          })}
-        </ul>
+
+        <AllNumbersDrawList drawNumbersList={drawNumbersList} />
+
         <h3 className={styles.title}>Rodadas de sorteios realizadas:</h3>
         <span className={styles.item}>{turns}</span>
         <h3 className={styles.title}>Quantidade de apostas vencedoras:</h3>

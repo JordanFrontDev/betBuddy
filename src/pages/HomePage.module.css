@@ -14,7 +14,8 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-rows: 1fr 5rem 4rem;
+  grid-template-rows: 1fr min-content 4rem;
+  gap: 1.5rem;
   margin-left: 7rem;
 }
 
@@ -34,7 +35,7 @@
 
 .cta:link,
 .cta:visited {
-  display: inline-block;
+  display: block;
   background-color: #fc6a03;
   color: #fff;
   text-decoration: none;
@@ -50,4 +51,38 @@
 
 .cta:hover {
   background-color: #fd9d58;
+}
+
+@media only screen and (max-width: 1200px) {
+  .homepage section {
+    background-image: url("/hero-image-2.png");
+    justify-content: center;
+    align-items: start;
+    padding-top: 15rem;
+  }
+
+  .homepage div {
+    text-align: center;
+    justify-items: center;
+    margin: 0 3rem;
+    width: 100%;
+  }
+
+  .cta:link,
+  .cta:visited {
+    justify-self: center;
+    align-self: center;
+    font-size: 2.5rem;
+    padding: 1rem 7rem;
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cta:link,
+  .cta:visited {
+    justify-self: center;
+    align-self: center;
+    font-size: 3rem;
+  }
 }

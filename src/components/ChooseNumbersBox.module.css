@@ -1,3 +1,7 @@
+.container {
+  margin-right: 3rem;
+}
+
 .number {
   display: flex;
   justify-content: center;
@@ -12,6 +16,9 @@
   cursor: pointer;
 }
 
+.number:focus {
+}
+
 .numbers {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
@@ -19,8 +26,12 @@
   gap: 0.8rem;
 }
 
-.container {
-  padding-right: 5rem;
+@media only screen and (max-width: 900px) {
+  .container {
+    grid-column: 1 / -1;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .title {
@@ -30,7 +41,7 @@
 }
 
 .text {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-align: left;
 }
 
